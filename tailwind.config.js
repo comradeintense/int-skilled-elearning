@@ -15,7 +15,7 @@ export default {
 			},
 			fontSize: {
 				fs56: ['3.5rem', '1.25'],
-				fs40: ['2.5rem', '1.275'],
+				'fs40-51': ['2.5rem', '1.275'],
 				'fs36-45': ['2.25rem', '1.25'],
 				fs32: ['2rem', '1.25'],
 				fs28: ['1.75rem', '1.17'],
@@ -25,6 +25,12 @@ export default {
 				'fs18-28': ['1.125rem', '1.57'],
 				'fs16-26': ['1rem', '1.625'],
 				'fs16-28': ['1rem', '1.75'],
+			},
+			backgroundImage: {
+				'overlay-orange':
+					'linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%)',
+				'overlay-magenta':
+					'linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #4851FF 0%, #F02AA6 100%)',
 			},
 		},
 	},
