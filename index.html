@@ -22,12 +22,12 @@
 	</head>
 	<body>
 		<header>
-			<div class="layout-mobile sm:layout-tablet">
+			<div class="layout-mobile sm:layout-tablet lg:layout-desktop">
 				<nav class="mt-4 sm:mt-6">
 					<div class="flex items-center justify-between">
 						<p class="font-extrabold text-fs28-35 lg:text-fs36-45">skilled</p>
 						<a
-							class="font-bold text-white text-fs16-28 lg:text-fs18-28 bg-Deadly-Depths rounded-[1.75rem] py-[0.5625rem] px-[1.5rem] hover:bg-Dusted-Peri hover:cursor-pointer focus:outline-none focus:ring focus:ring-yellow-500"
+							class="font-bold text-white text-fs16-28 lg:text-fs18-28 bg-Deadly-Depths rounded-[1.75rem] py-[0.5625rem] px-[1.5rem] lg:py-[.875rem] lg:px-[2rem] hover:bg-Dusted-Peri hover:cursor-pointer focus:outline-none focus:ring focus:ring-yellow-500"
 							href="#"
 							alt="Get started"
 							>Get Started</a
@@ -36,8 +36,8 @@
 				</nav>
 			</div>
 		</header>
-		<main class="relative overflow-x-hidden">
-			<section class="mt-[2.375rem] sm:mt-[6.25rem] layout-mobile sm:layout-tablet sm:flex sm:flex-row relative">
+		<main class="relative">
+			<section class="mt-[2.375rem] sm:mt-[6.1875rem] lg:mt-[10.75rem] layout-mobile sm:layout-tablet sm:flex sm:flex-row relative">
 				<!-- Text area -->
 				<div class="sm:basis-[56%] lg:max-w-[28.5625rem]">
 					<h1 class="font-extrabold text-fs40-51 text-Deadly-Depths lg:text-fs56">Maximize skill, minimize budget</h1>
@@ -45,60 +45,81 @@
 						Our modern courses across a range of <span class="whitespace-nowrap">in-demand</span> skills will give you the knowledge you need to live the life
 						you want.
 					</p>
-					<div class="flex mt-6">
-						<a class="font-bold text-white text-fs16-26 lg:text-fs18-28 py-[0.9375rem] px-[2.25rem] gradient-orange" href="#" alt="Get started">Get Started</a>
+					<div class="flex mt-6 lg:mt-[2.5rem]">
+						<a class="font-bold text-white text-fs16-26 lg:text-fs18-28 py-[0.9375rem] px-[2.25rem] lg:px-8 gradient-orange" href="#" alt="Get started"
+							>Get Started</a
+						>
 					</div>
 				</div>
 				<!-- Image area -->
-				<picture class="mt-[2.875rem] sm:absolute sm:-top-[248px] sm:-right-[334px] sm:w-[43rem] -z-10">
+				<picture
+					class="mt-[2.875rem] sm:absolute sm:-top-[15.5rem] sm:-right-[20.875rem] sm:w-[43rem] lg:absolute lg:w-[64rem] lg:-top-[27.5rem] lg:-right-[29.5rem] lg:z-10"
+				>
 					<source media="(min-width: 64em)" srcset="/image-hero-desktop@2x.png" />
 					<source media="(min-width: 40em)" srcset="/image-hero-tablet@2x.png" />
 					<img class="w-full h-auto" src="/image-hero-mobile@2x.png" alt="" />
 				</picture>
 			</section>
 			<!-- Cards section -->
-			<section class="-mt-[1rem] sm:mt-[13rem] gradient-background">
+			<section class="-mt-[1rem] sm:mt-[13rem] gradient-background lg:mt-[15rem]">
 				<div
-					class="pb-[5rem] grid grid-cols-1 gap-[2.5rem] sm:gap-y-14 sm:gap-x-[.6875rem] layout-mobile sm:layout-tablet sm:grid-cols-2 sm:pb-[5.375rem] lg:grid-cols-3 lg:gap-x-[1.875rem] lg:gap-y-[5rem]"
+					class="pb-[5rem] grid grid-cols-1 gap-[2.5rem] sm:gap-y-14 sm:gap-x-[.6875rem] layout-mobile sm:layout-tablet sm:grid-cols-2 sm:pb-[5.375rem] lg:pb-[8.75rem] lg:grid-cols-3 lg:gap-x-[1.875rem] lg:gap-y-[5rem]"
 				>
-					<article class="rounded-[.625rem] gradient-orange">
-						<h2 class="pt-6 pb-8 font-extrabold text-white text-fs24-32 px-7 sm:px-8 sm:pt-14 sm:pb-0">Check out our most popular courses!</h2>
+					<article class="rounded-[.625rem] gradient-orange pt-6 sm:pt-14 sm:pb-0 sm:pl-8 sm:pr-[1.3125rem] lg:px-8 lg:pt-16">
+						<h2 class="font-extrabold text-white text-fs24-32">Check out our most popular courses!</h2>
 					</article>
 
-					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+					<article
+						class="rounded-[.625rem] bg-white px-7 relative pb-8 sm:pl-8 sm:pr-[1.3125rem] flex flex-col justify-between items-left lg:max-w-[21.875rem] lg:px-8"
+					>
 						<img src="/icon-animation.svg" alt="" class="absolute -translate-y-1/2" />
-						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Animation</h3>
-						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
-							Learn the latest animation techniques to create stunning motion design and captivate your audience.
-						</p>
-						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
+						<div>
+							<h3 class="mt-14 text-[1.25rem] lg:text-fs24-32 font-extrabold text-Deadly-Depths lg:mt-16">Animation</h3>
+							<p class="mt-4 font-medium text-fs16-26 lg:text-fs18-28 lg:mt-6 text-Top-Shelf">
+								Learn the latest animation techniques to create stunning motion design and captivate your audience.
+							</p>
+						</div>
+						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28 sm:mt-6" href="#" alt="Get Started">Get Started</a>
 					</article>
-					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+					<article
+						class="rounded-[.625rem] bg-white px-7 relative pb-8 sm:pl-8 sm:pr-[1.3125rem] flex flex-col justify-between items-left lg:max-w-[21.875rem] lg:px-8"
+					>
 						<img src="/icon-design.svg" alt="" class="absolute -translate-y-1/2" />
-						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Design</h3>
-						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
-						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
+						<div>
+							<h3 class="mt-14 text-[1.25rem] lg:text-fs24-32 font-extrabold text-Deadly-Depths lg:mt-16">Design</h3>
+							<p class="mt-4 font-medium text-fs16-26 lg:text-fs18-28 lg:mt-6 text-Top-Shelf">
+								Create beautiful, usable interfaces to help shape the future of how the web looks.
+							</p>
+						</div>
+
+						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28 sm:mt-6" href="#" alt="Get Started">Get Started</a>
 					</article>
-					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+					<article
+						class="rounded-[.625rem] bg-white px-7 relative pb-8 sm:pl-8 sm:pr-[1.3125rem] flex flex-col justify-between items-left lg:max-w-[21.875rem] lg:px-8"
+					>
 						<img src="/icon-photography.svg" alt="" class="absolute -translate-y-1/2" />
-						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Photography</h3>
-						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
+						<h3 class="mt-14 text-[1.25rem] lg:text-fs24-32 font-extrabold text-Deadly-Depths lg:mt-16">Photography</h3>
+						<p class="mt-4 font-medium text-fs16-26 lg:text-fs18-28 lg:mt-6 text-Top-Shelf">
 							Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
 						</p>
 						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
 					</article>
-					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+					<article
+						class="rounded-[.625rem] bg-white px-7 relative pb-8 sm:pl-8 sm:pr-[1.3125rem] flex flex-col justify-between items-left lg:max-w-[21.875rem] lg:px-8"
+					>
 						<img src="/icon-crypto.svg" alt="" class="absolute -translate-y-1/2" />
-						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Crypto</h3>
-						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
+						<h3 class="mt-14 text-[1.25rem] lg:text-fs24-32 font-extrabold text-Deadly-Depths lg:mt-16">Crypto</h3>
+						<p class="mt-4 font-medium text-fs16-26 lg:text-fs18-28 lg:mt-6 text-Top-Shelf">
 							All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.
 						</p>
 						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
 					</article>
-					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+					<article
+						class="rounded-[.625rem] bg-white px-7 relative pb-8 sm:pl-8 sm:pr-[1.3125rem] flex flex-col justify-between items-left lg:max-w-[21.875rem] lg:px-8"
+					>
 						<img src="/icon-business.svg" alt="" class="absolute -translate-y-1/2" />
-						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Business</h3>
-						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
+						<h3 class="mt-14 text-[1.25rem] lg:text-fs24-32 font-extrabold text-Deadly-Depths lg:mt-16">Business</h3>
+						<p class="mt-4 font-medium text-fs16-26 lg:text-fs18-28 lg:mt-6 text-Top-Shelf">
 							A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
 						</p>
 						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
