@@ -36,12 +36,12 @@
 				</nav>
 			</div>
 		</header>
-		<main>
-			<section class="mt-[2.375rem] sm:mt-[6.25rem] layout-mobile sm:layout-tablet">
+		<main class="relative overflow-x-hidden">
+			<section class="mt-[2.375rem] sm:mt-[6.25rem] layout-mobile sm:layout-tablet sm:flex sm:flex-row relative">
 				<!-- Text area -->
-				<div class="sm:w-[52vw]">
-					<h1 class="font-extrabold text-fs40-51 text-Deadly-Depths">Maximize skill, minimize budget</h1>
-					<p class="text-fs16-26 text-Top-Shelf mt-[1.625rem] font-medium">
+				<div class="sm:basis-[56%] lg:max-w-[28.5625rem]">
+					<h1 class="font-extrabold text-fs40-51 text-Deadly-Depths lg:text-fs56">Maximize skill, minimize budget</h1>
+					<p class="text-fs16-26 text-Top-Shelf mt-[1.625rem] font-medium lg:text-fs18-28">
 						Our modern courses across a range of <span class="whitespace-nowrap">in-demand</span> skills will give you the knowledge you need to live the life
 						you want.
 					</p>
@@ -50,20 +50,74 @@
 					</div>
 				</div>
 				<!-- Image area -->
-				<div class="mt-[2.875rem]">
-					<picture>
-						<source media="(min-width: 40em)" srcset="/image-hero-tablet@2x.png" />
-						<img class="w-full" src="/image-hero-mobile@2x.png" alt="" />
-					</picture>
+				<picture class="mt-[2.875rem] sm:absolute sm:-top-[248px] sm:-right-[334px] sm:w-[43rem] -z-10">
+					<source media="(min-width: 64em)" srcset="/image-hero-desktop@2x.png" />
+					<source media="(min-width: 40em)" srcset="/image-hero-tablet@2x.png" />
+					<img class="w-full h-auto" src="/image-hero-mobile@2x.png" alt="" />
+				</picture>
+			</section>
+			<!-- Cards section -->
+			<section class="-mt-[1rem] sm:mt-[13rem] gradient-background">
+				<div
+					class="pb-[5rem] grid grid-cols-1 gap-[2.5rem] sm:gap-y-14 sm:gap-x-[.6875rem] layout-mobile sm:layout-tablet sm:grid-cols-2 sm:pb-[5.375rem] lg:grid-cols-3 lg:gap-x-[1.875rem] lg:gap-y-[5rem]"
+				>
+					<article class="rounded-[.625rem] gradient-orange">
+						<h2 class="pt-6 pb-8 font-extrabold text-white text-fs24-32 px-7 sm:px-8 sm:pt-14 sm:pb-0">Check out our most popular courses!</h2>
+					</article>
+
+					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+						<img src="/icon-animation.svg" alt="" class="absolute -translate-y-1/2" />
+						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Animation</h3>
+						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
+							Learn the latest animation techniques to create stunning motion design and captivate your audience.
+						</p>
+						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
+					</article>
+					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+						<img src="/icon-design.svg" alt="" class="absolute -translate-y-1/2" />
+						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Design</h3>
+						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">Create beautiful, usable interfaces to help shape the future of how the web looks.</p>
+						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
+					</article>
+					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+						<img src="/icon-photography.svg" alt="" class="absolute -translate-y-1/2" />
+						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Photography</h3>
+						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
+							Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.
+						</p>
+						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
+					</article>
+					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+						<img src="/icon-crypto.svg" alt="" class="absolute -translate-y-1/2" />
+						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Crypto</h3>
+						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
+							All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.
+						</p>
+						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
+					</article>
+					<article class="rounded-[.625rem] bg-white px-7 relative pb-8">
+						<img src="/icon-business.svg" alt="" class="absolute -translate-y-1/2" />
+						<h3 class="mt-14 text-[1.25rem] font-extrabold text-Deadly-Depths">Business</h3>
+						<p class="mt-4 font-medium mb-7 text-fs16-26 text-Top-Shelf">
+							A step-by-step playbook to help you start, scale, and sustain your business without outside investment.
+						</p>
+						<a class="font-bold text-Flamboyant-Flamingo text-fs18-28" href="#" alt="Get Started">Get Started</a>
+					</article>
 				</div>
 			</section>
 		</main>
-
-		Check out our most popular courses! Animation Learn the latest animation techniques to create stunning motion design and captivate your audience. Get
-		Started Design Create beautiful, usable interfaces to help shape the future of how the web looks. Get Started Photography Explore critical fundamentals like
-		lighting, composition, and focus to capture exceptional photos. Get Started Crypto All you need to know to get started investing in crypto. Go from beginner
-		to advanced with this 54 hour course. Get Started Business A step-by-step playbook to help you start, scale, and sustain your business without outside
-		investment. Get Started Get Started
+		<!-- footer here -->
+		<footer class="bg-Deadly-Depths py-[2.25rem]">
+			<div class="flex items-center justify-between layout-mobile sm:layout-tablet">
+				<p class="font-extrabold text-white text-fs28-35 lg:text-fs36-45">skilled</p>
+				<a
+					class="font-bold text-white text-fs16-28 lg:text-fs18-28 gradient-magenta rounded-[1.75rem] py-[0.5625rem] px-[1.5rem] hover:bg-Dusted-Peri hover:cursor-pointer focus:outline-none focus:ring focus:ring-yellow-500"
+					href="#"
+					alt="Get started"
+					>Get Started</a
+				>
+			</div>
+		</footer>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>
